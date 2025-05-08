@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { ShoppingBag, Search } from "lucide-react"
 
-
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "./them-bg/theme-toggle"
 
@@ -14,6 +13,9 @@ export function Navbar() {
             StyleStore
           </Link>
           <nav className="hidden md:flex gap-6">
+            <Link href="/shop" className="text-sm font-medium transition-colors hover:text-primary">
+              Shop
+            </Link>
             <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
               Women
             </Link>
